@@ -10,12 +10,14 @@
 </template>
 
 <script lang="ts">
-import Vue from "vue";
+import Vue from 'vue';
+
 export default Vue.extend({});
 </script>
 
 <style lang="postcss" module>
 .card {
+  background-color: white;
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(0, 0, 0, 0.1);
   position: relative;
 }

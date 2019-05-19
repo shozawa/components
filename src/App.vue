@@ -1,28 +1,29 @@
 <template>
   <div id="app">
-    <div style="width: 300px;">
+    <ComponentModal>
       <ComponentCard>
         <template #header>Card Title</template>
         The quick brown fox jumps over the lazy dog
       </ComponentCard>
-    </div>
+    </ComponentModal>
   </div>
 </template>
 
 <script lang="ts">
-import { Component, Vue } from "vue-property-decorator";
-import HelloWorld from "./components/HelloWorld.vue";
-import ComponentCard from "./components/ComponentCard.vue";
+import { Component, Vue } from 'vue-property-decorator';
+import ComponentCard from './components/ComponentCard.vue';
+import ComponentModal from './components/ComponentModal.vue';
 
 @Component({
   components: {
-    ComponentCard
-  }
+    ComponentCard,
+    ComponentModal,
+  },
 })
 export default class App extends Vue {}
 </script>
 
-<style lang="scss">
+<style lang="postcss">
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
